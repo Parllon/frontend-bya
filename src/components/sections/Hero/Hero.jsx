@@ -9,7 +9,7 @@ export function Hero() {
       <div className="hero__bg" />
       <div className="container-x hero__content">
         <Reveal trigger="load" duration={0.8}>
-          <div className="hero__logo"><Logo size="large" /></div>
+          <div className="hero__logo"><Logo size="xl" /></div>
 
           <h1 className="hero__title">
             Beleza e sofisticacao<br />

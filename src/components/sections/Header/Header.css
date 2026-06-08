@@ -4,7 +4,7 @@
   backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--border);
 }
-.header__inner { display: flex; align-items: center; justify-content: space-between; padding-block: 0.75rem; }
+.header__inner { display: flex; align-items: center; justify-content: space-between; padding-block: 0.25rem; }
 .header__brand { display: flex; align-items: center; gap: 0.75rem; }
 .header__brand-text { display: flex; flex-direction: column; }
 .header__name { font-size: 1.125rem; font-weight: 600; letter-spacing: 0.05em; color: var(--foreground); }

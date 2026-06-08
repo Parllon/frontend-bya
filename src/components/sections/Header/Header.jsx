@@ -9,8 +9,13 @@ export function Header() {
     <header className="header">
       <div className="container-x header__inner">
         <div className="header__brand">
-          <Logo size="small" />
-          <div className="header__brand-text">
+          {/* Aplicamos a escala de 1.4 (aumenta 40%) a partir do lado esquerdo */}
+          <div className="scale-[1.4] origin-left">
+            <Logo size="defalut" />
+          </div>
+          
+          {/* Adicionamos ml-3 (margin) para afastar o texto da logo que agora está maior */}
+          <div className="header__brand-text ml-3">
             <span className="header__name">BYA MARCONDES</span>
             <span className="header__role">NAIL DESIGNER</span>
           </div>
