@@ -1,73 +1,47 @@
-# React + TypeScript + Vite
+# Bya Marcondes — Nail Designer (React + Tailwind v4)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Landing page modular: cada componente vive na sua própria pasta com o par
+`Componente.jsx` + `Componente.css` lado a lado.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## Rodar
+```bash
+npm install
+npm run dev      # http://localhost:5173
+npm run build    # build de produção
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## Estrutura
 ```
+src/
+├── App.jsx
+├── main.jsx
+├── styles/theme.css            # tokens (CSS vars) + Tailwind + layout (.container-x, .section)
+├── data/content.js             # textos, preços, imagens, navegação
+├── assets/
+│   ├── images/                 # imagens locais (ver README da pasta)
+│   └── logos/                  # logo.svg, favicon.svg (marcas estáticas)
+└── components/
+    ├── ui/                     # primitivos reutilizáveis (1 pasta cada)
+    │   ├── Reveal/             #   Reveal.jsx + Reveal.css
+    │   ├── Button/
+    │   ├── SectionHeader/
+    │   ├── Card/
+    │   ├── Logo/
+    │   ├── FormField/
+    │   ├── NavLink/
+    │   ├── SocialLink/
+    │   └── ContactInfoItem/
+    └── sections/               # seções (cada card também é seu próprio módulo)
+        ├── Header/   Hero/
+        ├── Services/ ServiceCard/
+        ├── Gallery/  GalleryItem/
+        ├── Pricing/  PricingCard/
+        ├── Testimonials/ TestimonialCard/
+        ├── Contact/  Footer/
+```
+
+Cada pasta é autossuficiente: o `.css` ao lado contém só os estilos daquele
+componente, usando os tokens globais (`var(--primary)` etc.).
+
+O favicon ativo é `public/favicon.svg`; uma cópia para uso como marca fica em
+`src/assets/logos/`.

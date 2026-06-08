@@ -1,0 +1,14 @@
+.form-field { margin-bottom: 1.5rem; }
+.form-field__label {
+  display: block; margin-bottom: 0.5rem;
+  font-size: 0.75rem; font-weight: 500;
+  text-transform: uppercase; letter-spacing: 0.05em; color: var(--foreground);
+}
+.form-field__input {
+  width: 100%; padding: 0.75rem 0;
+  border: none; border-bottom: 1px solid var(--border);
+  background-color: transparent; color: var(--foreground); font: inherit;
+  transition: border-color 0.2s ease;
+}
+.form-field__input:focus { outline: none; border-bottom-color: var(--primary); }
+.form-field__input--area { min-height: 80px; resize: vertical; }

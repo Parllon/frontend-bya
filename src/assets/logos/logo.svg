@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" fill="none">
+  <circle cx="60" cy="60" r="58" stroke="#c9a961" stroke-width="0.5" fill="none"/>
+  <path id="arcTop" d="M 20,60 A 40,40 0 0,1 100,60" fill="none"/>
+  <text font-size="7" letter-spacing="3" font-weight="400" fill="#1a1a1a">
+    <textPath href="#arcTop" startOffset="50%" text-anchor="middle">BYA MARCONDES</textPath>
+  </text>
+  <path id="arcBottom" d="M 100,60 A 40,40 0 0,1 20,60" fill="none"/>
+  <text font-size="6" letter-spacing="2.5" font-weight="300" fill="#c9a961">
+    <textPath href="#arcBottom" startOffset="50%" text-anchor="middle">NAIL DESIGNER</textPath>
+  </text>
+  <g transform="translate(60,60)">
+    <text x="-12" y="8" font-size="32" font-weight="300" fill="#1a1a1a" font-family="serif">B</text>
+    <text x="2" y="8" font-size="36" font-weight="400" fill="#c9a961" font-family="serif">M</text>
+  </g>
+  <path d="M 15,60 l 2,-2 l 2,2 l -2,3 z" fill="#c9a961" opacity="0.6"/>
+  <path d="M 103,60 l 2,-2 l 2,2 l -2,3 z" fill="#c9a961" opacity="0.6"/>
+</svg>

@@ -1,0 +1,14 @@
+.header {
+  position: fixed; inset: 0 0 auto 0; z-index: 50;
+  background-color: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border);
+}
+.header__inner { display: flex; align-items: center; justify-content: space-between; padding-block: 0.75rem; }
+.header__brand { display: flex; align-items: center; gap: 0.75rem; }
+.header__brand-text { display: flex; flex-direction: column; }
+.header__name { font-size: 1.125rem; font-weight: 600; letter-spacing: 0.05em; color: var(--foreground); }
+.header__role { font-size: 0.75rem; letter-spacing: 0.15em; color: var(--primary); }
+.header__nav { display: none; gap: 2rem; }
+.header__cta { padding: 0.625rem 1.5rem !important; }
+@media (min-width: 768px) { .header__nav { display: flex; align-items: center; } }

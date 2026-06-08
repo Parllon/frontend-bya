@@ -1,0 +1,9 @@
+.card {
+  position: relative;
+  padding: 2rem;
+  background-color: var(--card);
+  border: 1px solid var(--border);
+  transition: all 0.3s ease;
+}
+.card:hover { box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1), 0 8px 10px -6px rgba(0,0,0,0.1); }
+.card--highlighted { border: 2px solid var(--primary); box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1); }
