@@ -80,7 +80,7 @@
 
   /* Layouts e Cards */
   .section-padding {
-    @apply py-24 px-4;
+    @apply py-10 px-4;
   }
   .card-base {
     @apply bg-card p-8 border border-border hover:shadow-xl transition-all duration-300;
