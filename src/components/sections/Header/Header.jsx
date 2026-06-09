@@ -27,7 +27,7 @@ export function Header() {
           ))}
         </nav>
 
-        <Button className="header__cta">Agendar</Button>
+        <Button href="https://agendamento.deadzone.com.br" className="header__cta">Agendar</Button>
       </div>
     </header>
   );

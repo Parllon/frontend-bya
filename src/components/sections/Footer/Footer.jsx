@@ -27,7 +27,9 @@ export function Footer() {
             <ul className="footer__links">
               {navLinks.map((link) => (
                 <li key={link.href}>
-                  <a href={link.href} className="footer__link">{link.label}</a>
+                  <a href={link.href} className="footer__link">
+                    {link.label}
+                  </a>
                 </li>
               ))}
             </ul>
@@ -36,14 +38,18 @@ export function Footer() {
           <div>
             <h4 className="footer__heading">Social</h4>
             <div className="footer__social">
-              <SocialLink label="Instagram" icon={Instagram} />
+              <SocialLink
+                label="Instagram"
+                icon={Instagram}
+                href="https://www.instagram.com/byamarcondesunhas"
+              />
               <SocialLink label="Facebook" icon={Facebook} />
             </div>
           </div>
         </div>
 
         <div className="footer__bottom">
-          <p>&copy; 2026 Bya Marcondes. Todos os direitos reservados.</p>
+          <p>&copy; 2026 parllondev.net - Todos os direitos reservados.</p>
         </div>
       </div>
     </footer>

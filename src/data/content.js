@@ -8,7 +8,7 @@ export const services = [
   { icon: HandMetal, title: "Manicure & Pedicure", description: "Cuidado completo para suas unhas com produtos de qualidade premium e tecnicas profissionais" },
   { icon: Paintbrush, title: "Nail Art", description: "Designs exclusivos e personalizados criados especialmente para voce" },
   { icon: Sparkles, title: "Alongamento", description: "Alongamento com gel, acrilico e fibra de vidro com acabamento impecavel" },
-  { icon: Heart, title: "Spa das Unhas", description: "Tratamento relaxante com hidratacao profunda e massagem terapeutica" },
+  // { icon: Heart, title: "Spa das Unhas", description: "Tratamento relaxante com hidratacao profunda e massagem terapeutica" },
 ];
 
 /* Galeria (Gallery) */
@@ -24,9 +24,11 @@ export const galleryImages = [
 /* Precos (Pricing) */
 export const plans = [
   { name: "Essential", price: "R$ 80", features: ["Manicure profissional", "Esmaltacao em gel", "Cutilagem e design", "Hidratacao das maos"] },
-  { name: "Premium", price: "R$ 150", popular: true, features: ["Manicure completa", "Nail art personalizada", "Esmaltacao premium", "Tratamento SPA", "Massagem relaxante"] },
-  { name: "Signature", price: "R$ 250", features: ["Experiencia exclusiva", "Nail art elaborada", "Alongamento premium", "SPA completo", "Design personalizado", "Produtos de luxo"] },
+  { name: "Premium", price: "R$ 150", popular: true, features: ["Manicure completa", "Nail art personalizada", "Esmaltacao premium", "Tratamento SPA"] },
+  { name: "Signature", price: "R$ 250", features: ["Experiencia exclusiva", "Nail art elaborada", "Alongamento premium", , "Design personalizado"] },
 ];
+
+// "SPA completo", "Produtos de luxo", , "Massagem relaxante"
 
 /* Depoimentos (Testimonials) */
 export const testimonials = [
@@ -37,11 +39,33 @@ export const testimonials = [
 
 /* Contato (Contact) */
 export const contactInfo = [
-  { icon: MapPin, title: "Endereco", text: "Rua das Flores, 123 - Centro\nSao Paulo, SP" },
-  { icon: Phone, title: "Telefone", text: "(11) 98765-4321" },
-  { icon: Mail, title: "E-mail", text: "contato@byamarcondes.com" },
-  { icon: Clock, title: "Horario", text: "Segunda a Sexta: 9h as 19h\nSabado: 9h as 17h" },
-  { icon: Instagram, title: "Instagram", text: "@byamarcondes" },
+  { 
+    icon: MapPin, 
+    title: "Endereco", 
+    text: "Avenida Venâncio Veloso\nBom Jardim - RJ" 
+  },
+  { 
+    icon: Phone, 
+    title: "Telefone / WhatsApp", 
+    text: "(22) 99101-6335",
+    href: "https://wa.me/5522991016335" // Link direto para abrir o WhatsApp
+  },
+  { 
+    icon: Mail, 
+    title: "E-mail", 
+    text: "contato@byamarcondes.com" 
+  },
+  { 
+    icon: Clock, 
+    title: "Horario", 
+    text: "Segunda a Sexta: 9h as 19h\nSabado: 9h as 17h" 
+  },
+  { 
+    icon: Instagram, 
+    title: "Instagram", 
+    text: "@byamarcondesunhas",
+    href: "https://www.instagram.com/byamarcondesunhas" // Link real do Instagram
+  },
 ];
 
 /* Navegacao (Header / Footer) */

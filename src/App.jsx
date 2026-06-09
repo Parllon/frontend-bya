@@ -6,6 +6,7 @@ import { Pricing } from "./components/sections/Pricing/Pricing";
 import { Testimonials } from "./components/sections/Testimonials/Testimonials";
 import { Contact } from "./components/sections/Contact/Contact";
 import { Footer } from "./components/sections/Footer/Footer";
+import { FloatingWhatsApp } from "./components/ui/FloatingWhatsApp/FloatingWhatsApp"; // Importar aqui
 
 export default function App() {
   return (
@@ -18,6 +19,7 @@ export default function App() {
       <Testimonials />
       <Contact />
       <Footer />
+      <FloatingWhatsApp /> {/* Inserido no final da árvore */}
     </div>
   );
 }

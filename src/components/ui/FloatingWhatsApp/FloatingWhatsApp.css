@@ -1,0 +1,63 @@
+.floating-wpp {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 100;
+  width: 3.5rem;
+  height: 3.5rem;
+  background-color: #25d366; /* Verde clássico do WhatsApp */
+  color: #ffffff;
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.floating-wpp:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+}
+
+.floating-wpp__icon {
+  width: 1.75rem;
+  height: 1.75rem;
+}
+
+/* Tooltip elegante que surge ao passar o mouse */
+.floating-wpp__tooltip {
+  position: absolute;
+  right: 4.5rem;
+  background-color: var(--foreground);
+  color: var(--background);
+  padding: 0.5rem 1rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.floating-wpp:hover .floating-wpp__tooltip {
+  opacity: 1;
+  visibility: visible;
+  right: 4rem;
+}
+
+@media (max-width: 640px) {
+  .floating-wpp {
+    bottom: 1.5rem;
+    right: 1.5rem;
+    width: 3.25rem;
+    height: 3.25rem;
+  }
+  .floating-wpp__tooltip {
+    display: none; /* Desativa o texto flutuante em telas pequenas para economizar espaço */
+  }
+}

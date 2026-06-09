@@ -9,10 +9,13 @@ export function Hero() {
       <div className="hero__bg" />
       <div className="container-x hero__content">
         <Reveal trigger="load" duration={0.8}>
-          <div className="hero__logo"><Logo size="xl" /></div>
+          <div className="hero__logo">
+            <Logo size="xl" />
+          </div>
 
           <h1 className="hero__title">
-            Beleza e sofisticacao<br />
+            Beleza e sofisticacao
+            <br />
             <strong>em cada detalhe</strong>
           </h1>
 
@@ -21,8 +24,12 @@ export function Hero() {
           </p>
 
           <div className="hero__actions">
-            <Button>Agendar Horario</Button>
-            <Button variant="outline">Ver Portfolio</Button>
+            <Button href="https://agendamento.deadzone.com.br">
+              Agendar Horario
+            </Button>
+            <Button href="#galeria" variant="outline">
+              Ver Portfolio
+            </Button>
           </div>
         </Reveal>
       </div>

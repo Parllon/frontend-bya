@@ -3,7 +3,13 @@ import { Card } from "../../ui/Card/Card";
 import { Button } from "../../ui/Button/Button";
 import "./PricingCard.css";
 
-export function PricingCard({ name, price, features, popular = false, delay = 0 }) {
+export function PricingCard({
+  name,
+  price,
+  features,
+  popular = false,
+  delay = 0,
+}) {
   return (
     <Reveal delay={delay}>
       <Card highlighted={popular} className="pricing-card">
@@ -24,7 +30,12 @@ export function PricingCard({ name, price, features, popular = false, delay = 0 
           ))}
         </ul>
 
-        <Button variant={popular ? "primary" : "outline"} block className="pricing-card__btn">
+        <Button
+          href="https://agendamento.deadzone.com.br"
+          variant={popular ? "primary" : "outline"}
+          block
+          className="pricing-card__btn"
+        >
           Agendar
         </Button>
       </Card>
