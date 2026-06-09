@@ -1,5 +1,0 @@
-.pricing__grid {
-  display: grid; grid-template-columns: 1fr; gap: 2rem;
-  max-width: 72rem; margin-inline: auto;
-}
-@media (min-width: 768px) { .pricing__grid { grid-template-columns: repeat(3, 1fr); } }

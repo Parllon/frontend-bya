@@ -21,14 +21,27 @@ export const galleryImages = [
   { url: "https://images.unsplash.com/photo-1619615787228-ce0fa8440e18?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=600", alt: "Trabalho artistico" },
 ];
 
-/* Precos (Pricing) */
-export const plans = [
-  { name: "Essential", price: "R$ 80", features: ["Manicure profissional", "Esmaltacao em gel", "Cutilagem e design", "Hidratacao das maos"] },
-  { name: "Premium", price: "R$ 150", popular: true, features: ["Manicure completa", "Nail art personalizada", "Esmaltacao premium", "Tratamento SPA"] },
-  { name: "Signature", price: "R$ 250", features: ["Experiencia exclusiva", "Nail art elaborada", "Alongamento premium", , "Design personalizado"] },
-];
+/* =========================================================
+   INVESTIMENTO — Tabela de servicos + WhatsApp
+   ========================================================= */
+export const whatsapp = {
+  phone: "5522991016335",
+  message: "Olá Bya! Gostaria de um orçamento / agendar um horário.",
+};
 
-// "SPA completo", "Produtos de luxo", , "Massagem relaxante"
+// Servicos e valores (conforme a plataforma de agendamento).
+// Edite nome, duracao (min) e preco aqui quando precisar.
+export const serviceMenu = [
+  { name: "Manicure", duration: 60, price: "R$ 25,00" },
+  { name: "Pedicure", duration: 60, price: "R$ 25,00" },
+  { name: "Manicure + Pedicure", duration: 120, price: "R$ 50,00" },
+  { name: "Banho de Gel", duration: 150, price: "R$ 95,00" },
+  { name: "Aplicação de unha Postiça", duration: 90, price: "R$ 45,00" },
+  { name: "Molde F1, Unhas de Fibra, Speed Tip Gel", duration: 210, price: "R$ 170,00" },
+  { name: "Manutenção: Banho de Gel", duration: 150, price: "R$ 75,00" },
+  { name: "Manutenção: Reconstrução por Unha", duration: 30, price: "R$ 10,00" },
+  { name: "Manutenção: Molde F1, Unhas de Fibra", duration: 150, price: "R$ 90,00" },
+];
 
 /* Depoimentos (Testimonials) */
 export const testimonials = [
@@ -39,32 +52,32 @@ export const testimonials = [
 
 /* Contato (Contact) */
 export const contactInfo = [
-  { 
-    icon: MapPin, 
-    title: "Endereco", 
-    text: "Avenida Venâncio Veloso\nBom Jardim - RJ" 
+  {
+    icon: MapPin,
+    title: "Endereco",
+    text: "Avenida Venâncio Veloso\nBom Jardim - RJ"
   },
-  { 
-    icon: Phone, 
-    title: "Telefone / WhatsApp", 
+  {
+    icon: Phone,
+    title: "Telefone / WhatsApp",
     text: "(22) 99101-6335",
-    href: "https://wa.me/5522991016335" // Link direto para abrir o WhatsApp
+    href: "https://wa.me/5522991016335"
   },
-  { 
-    icon: Mail, 
-    title: "E-mail", 
-    text: "contato@byamarcondes.com" 
+  {
+    icon: Mail,
+    title: "E-mail",
+    text: "contato@byamarcondes.com"
   },
-  { 
-    icon: Clock, 
-    title: "Horario", 
-    text: "Segunda a Sexta: 9h as 19h\nSabado: 9h as 17h" 
+  {
+    icon: Clock,
+    title: "Horario",
+    text: "Segunda a Sexta: 9h as 19h\nSabado: 9h as 17h"
   },
-  { 
-    icon: Instagram, 
-    title: "Instagram", 
+  {
+    icon: Instagram,
+    title: "Instagram",
     text: "@byamarcondesunhas",
-    href: "https://www.instagram.com/byamarcondesunhas" // Link real do Instagram
+    href: "https://www.instagram.com/byamarcondesunhas"
   },
 ];
 
@@ -72,6 +85,6 @@ export const contactInfo = [
 export const navLinks = [
   { href: "#servicos", label: "Servicos" },
   { href: "#galeria", label: "Galeria" },
-  { href: "#precos", label: "Precos" },
+  { href: "#investimento", label: "Investimento" },
   { href: "#contato", label: "Contato" },
 ];

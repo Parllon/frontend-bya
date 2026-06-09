@@ -1,3 +1,13 @@
-.services__grid { display: grid; grid-template-columns: 1fr; gap: 2rem; }
-@media (min-width: 768px) { .services__grid { grid-template-columns: repeat(2, 1fr); } }
-@media (min-width: 1024px) { .services__grid { grid-template-columns: repeat(4, 1fr); } }
+.services__grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+/* cada item (o wrapper .reveal) vira um card flexível e centralizado */
+.services__grid > * {
+  flex: 1 1 260px;     /* cresce/encolhe, base de 260px */
+  max-width: 340px;    /* evita cards gigantes quando há poucos */
+  display: flex;       /* faz o card preencher a altura (alturas iguais) */
+}
+.services__grid .card { width: 100%; }

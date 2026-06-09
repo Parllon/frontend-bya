@@ -1,0 +1,77 @@
+.investment {
+  max-width: 46rem;
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+/* Tabela de servicos */
+.investment__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+.investment__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1.1rem 1.5rem;
+  background-color: var(--card);
+  border: 1px solid var(--border);
+  transition: border-color 0.25s ease, transform 0.25s ease;
+}
+.investment__row:hover {
+  border-color: var(--primary);
+  transform: translateX(4px);
+}
+.investment__info { display: flex; flex-direction: column; gap: 0.15rem; min-width: 0; }
+.investment__name {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--foreground);
+}
+.investment__duration {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--muted-foreground);
+}
+.investment__price {
+  flex-shrink: 0;
+  font-family: var(--font-serif);
+  font-size: 1.35rem;
+  font-weight: 400;
+  color: var(--primary);
+  white-space: nowrap;
+}
+
+.investment__note {
+  margin: 0;
+  max-width: 38rem;
+  text-align: center;
+  color: var(--muted-foreground);
+  font-size: 0.95rem;
+  font-weight: 300;
+  line-height: 1.7;
+}
+
+.investment__cta {
+  gap: 0.6rem;
+  background-color: #25d366 !important;  /* verde WhatsApp */
+  border-color: #25d366 !important;
+  color: #fff !important;
+}
+.investment__cta:hover { opacity: 0.92; }
+.investment__cta-icon { width: 1.2rem; height: 1.2rem; }
+
+@media (max-width: 480px) {
+  .investment__row { padding: 0.9rem 1rem; }
+  .investment__price { font-size: 1.15rem; }
+}

@@ -1,2 +1,19 @@
-.logo { position: relative; display: inline-flex; align-items: center; justify-content: center; }
-.logo__svg { width: 100%; height: 100%; }
+.logo {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+}
+.logo__img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  mix-blend-mode: multiply; /* remove o fundo branco do PNG */
+}
+.logo--small   { width: 40px;  height: 40px; }
+.logo--default { width: 64px;  height: 64px; }
+.logo--large   { width: 128px; height: 128px; }
+/* responsivos: nunca estouram a tela no celular */
+.logo--xl  { width: clamp(180px, 55vw, 340px); height: clamp(180px, 55vw, 340px); }
+.logo--xxl { width: clamp(200px, 65vw, 400px); height: clamp(200px, 65vw, 400px); }
