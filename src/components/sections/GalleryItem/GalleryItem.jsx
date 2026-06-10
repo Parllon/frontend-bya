@@ -1,12 +1,17 @@
 import { Reveal } from "../../ui/Reveal/Reveal";
 import "./GalleryItem.css";
 
-export function GalleryItem({ url, alt, delay = 0 }) {
+export function GalleryItem({ url, alt, delay = 0, onOpen }) {
   return (
     <Reveal scale={0.95} y={0} duration={0.5} delay={delay} className="gallery-item">
-      <div className="gallery-item__frame">
-        <img src={url} alt={alt} className="gallery-item__img" />
-      </div>
+      <button
+        type="button"
+        className="gallery-item__frame"
+        onClick={onOpen}
+        aria-label={`Ampliar foto: ${alt}`}
+      >
+        <img src={url} alt={alt} className="gallery-item__img" loading="lazy" />
+      </button>
     </Reveal>
   );
 }

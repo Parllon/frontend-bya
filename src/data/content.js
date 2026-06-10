@@ -37,10 +37,9 @@ export const serviceMenu = [
   { name: "Manicure + Pedicure", duration: 120, price: "R$ 50,00" },
   { name: "Banho de Gel", duration: 150, price: "R$ 95,00" },
   { name: "Aplicação de unha Postiça", duration: 90, price: "R$ 45,00" },
-  { name: "Molde F1, Unhas de Fibra, Speed Tip Gel", duration: 210, price: "R$ 170,00" },
-  { name: "Manutenção: Banho de Gel", duration: 150, price: "R$ 75,00" },
-  { name: "Manutenção: Reconstrução por Unha", duration: 30, price: "R$ 10,00" },
-  { name: "Manutenção: Molde F1, Unhas de Fibra", duration: 150, price: "R$ 90,00" },
+  { name: "Molde F1", duration: 210, price: "R$ 170,00" },
+  { name: "Unhas de Fibra", duration: 210, price: "R$ 170,00" },
+  { name: "Speed Tip Gel", duration: 210, price: "R$ 170,00" },
 ];
 
 /* Depoimentos (Testimonials) */
