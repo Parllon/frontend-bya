@@ -13,7 +13,7 @@ function formatDuration(min) {
 }
 
 export function Investment() {
-  const url = `https://wa.me/${whatsapp.phone}?text=${encodeURIComponent(whatsapp.message)}`;
+  const globalUrl = `https://wa.me/${whatsapp.phone}?text=${encodeURIComponent(whatsapp.message)}`;
 
   return (
     <section id="investimento" className="section section--secondary">
@@ -22,15 +22,28 @@ export function Investment() {
 
         <Reveal className="investment">
           <ul className="investment__list">
-            {serviceMenu.map((item) => (
-              <li key={item.name} className="investment__row">
-                <span className="investment__info">
-                  <span className="investment__name">{item.name}</span>
-                  <span className="investment__duration">{formatDuration(item.duration)}</span>
-                </span>
-                <span className="investment__price">{item.price}</span>
-              </li>
-            ))}
+            {serviceMenu.map((item) => {
+              // Gera a mensagem personalizada codificada para cada serviço individual
+              const customMessage = `Olá Bya! Gostaria de mais informações e verificar do serviço: ${item.name}.`;
+              const serviceUrl = `https://wa.me/${whatsapp.phone}?text=${encodeURIComponent(customMessage)}`;
+
+              return (
+                <li key={item.name}>
+                  <a 
+                    href={serviceUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="investment__row"
+                  >
+                    <span className="investment__info">
+                      <span className="investment__name">{item.name}</span>
+                      <span className="investment__duration">{formatDuration(item.duration)}</span>
+                    </span>
+                    <span className="investment__price">{item.price}</span>
+                  </a>
+                </li>
+              );
+            })}
           </ul>
 
           <p className="investment__note">
@@ -38,7 +51,7 @@ export function Investment() {
             Fale comigo no WhatsApp para um orçamento sem compromisso.
           </p>
 
-          <Button href={url} className="investment__cta">
+          <Button href={globalUrl} className="investment__cta">
             <MessageCircle className="investment__cta-icon" />
             Falar no WhatsApp
           </Button>

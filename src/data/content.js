@@ -1,13 +1,15 @@
 import {
   Sparkles, Heart, Paintbrush, HandMetal,
   MapPin, Phone, Mail, Clock, Instagram,
+  Hand,
+  Star,
 } from "lucide-react";
 
 /* Servicos (Services) */
 export const services = [
-  { icon: HandMetal, title: "Manicure & Pedicure", description: "Cuidado completo para suas unhas com produtos de qualidade premium e tecnicas profissionais" },
+  { icon: Hand, title: "Manicure & Pedicure", description: "Cuidado completo para suas unhas com produtos de qualidade premium e tecnicas profissionais" },
   { icon: Paintbrush, title: "Nail Art", description: "Designs exclusivos e personalizados criados especialmente para voce" },
-  { icon: Sparkles, title: "Alongamento", description: "Alongamento com gel, acrilico e fibra de vidro com acabamento impecavel" },
+  { icon: Star, title: "Alongamento", description: "Alongamento com gel, acrilico e fibra de vidro com acabamento impecavel" },
   // { icon: Heart, title: "Spa das Unhas", description: "Tratamento relaxante com hidratacao profunda e massagem terapeutica" },
 ];
 

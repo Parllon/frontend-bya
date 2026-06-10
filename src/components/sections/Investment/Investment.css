@@ -26,6 +26,8 @@
   background-color: var(--card);
   border: 1px solid var(--border);
   transition: border-color 0.25s ease, transform 0.25s ease;
+  text-decoration: none; /* Remove o sublinhado azul padrão de links */
+  cursor: pointer;       /* Força o ponteiro do mouse a indicar clique */
 }
 .investment__row:hover {
   border-color: var(--primary);
