@@ -24,7 +24,7 @@ export function Investment() {
           <ul className="investment__list">
             {serviceMenu.map((item) => {
               // Gera a mensagem personalizada codificada para cada serviço individual
-              const customMessage = `Olá Bya! Gostaria de mais informações e verificar do serviço: ${item.name}.`;
+              const customMessage = `Olá Bya! Gostaria de mais informações sobre o serviço: ${item.name}.`;
               const serviceUrl = `https://wa.me/${whatsapp.phone}?text=${encodeURIComponent(customMessage)}`;
 
               return (

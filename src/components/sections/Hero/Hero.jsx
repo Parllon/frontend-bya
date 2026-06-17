@@ -14,21 +14,21 @@ export function Hero() {
           </div>
 
           <h1 className="hero__title">
-            Beleza e sofisticacao
+            Beleza e sofisticação
             <br />
             <strong>em cada detalhe</strong>
           </h1>
 
           <p className="hero__subtitle">
-            Nail art exclusiva e personalizada com tecnicas avancadas e produtos premium
+            Nail art exclusiva e personalizada com técnicas avançadas e produtos premium
           </p>
 
           <div className="hero__actions">
             <Button href="https://agendamento.deadzone.com.br">
-              Agendar Horario
+              Agendar Horário
             </Button>
             <Button href="#galeria" variant="outline">
-              Ver Portfolio
+              Ver Portfólio
             </Button>
           </div>
         </Reveal>

@@ -7,9 +7,9 @@ import {
 
 /* Servicos (Services) */
 export const services = [
-  { icon: Hand, title: "Manicure & Pedicure", description: "Cuidado completo para suas unhas com produtos de qualidade premium e tecnicas profissionais" },
-  { icon: Paintbrush, title: "Nail Art", description: "Designs exclusivos e personalizados criados especialmente para voce" },
-  { icon: Star, title: "Alongamento", description: "Alongamento com gel, acrilico e fibra de vidro com acabamento impecavel" },
+  { icon: Hand, title: "Manicure & Pedicure", description: "Cuidado completo para suas unhas com produtos de qualidade premium e técnicas profissionais" },
+  { icon: Paintbrush, title: "Nail Art", description: "Designs exclusivos e personalizados criados especialmente para você" },
+  { icon: Star, title: "Alongamento", description: "Alongamento com gel, acrílico e fibra de vidro com acabamento impecável" },
   // { icon: Heart, title: "Spa das Unhas", description: "Tratamento relaxante com hidratacao profunda e massagem terapeutica" },
 ];
 
@@ -46,16 +46,16 @@ export const serviceMenu = [
 
 /* Depoimentos (Testimonials) */
 export const testimonials = [
-  { name: "Mariana S.", text: "Atendimento impecavel e resultado surpreendente. A atencao aos detalhes faz toda a diferenca!" },
-  { name: "Fernanda L.", text: "Profissionalismo e qualidade excepcional. Cada visita e uma experiencia unica." },
-  { name: "Carolina M.", text: "Design personalizado e acabamento perfeito. Simplesmente o melhor trabalho que ja vi!" },
+  { name: "Mariana S.", text: "Atendimento impecável e resultado surpreendente. A atenção aos detalhes faz toda a diferença!" },
+  { name: "Fernanda L.", text: "Profissionalismo e qualidade excepcional. Cada visita é uma experiência única." },
+  { name: "Carolina M.", text: "Design personalizado e acabamento perfeito. Simplesmente o melhor trabalho que já vi!" },
 ];
 
 /* Contato (Contact) */
 export const contactInfo = [
   {
     icon: MapPin,
-    title: "Endereco",
+    title: "Endereço",
     text: "Avenida Venâncio Veloso\nBom Jardim - RJ"
   },
   {
@@ -71,8 +71,8 @@ export const contactInfo = [
   },
   {
     icon: Clock,
-    title: "Horario",
-    text: "Segunda a Sexta: 9h as 19h\nSabado: 9h as 17h"
+    title: "Horário",
+    text: "Segunda a Sexta: 9h às 19h\nSábado: 9h às 17h"
   },
   {
     icon: Instagram,
@@ -84,7 +84,7 @@ export const contactInfo = [
 
 /* Navegacao (Header / Footer) */
 export const navLinks = [
-  { href: "#servicos", label: "Servicos" },
+  { href: "#servicos", label: "Serviços" },
   { href: "#galeria", label: "Galeria" },
   { href: "#investimento", label: "Investimento" },
   { href: "#contato", label: "Contato" },

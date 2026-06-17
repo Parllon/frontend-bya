@@ -18,12 +18,12 @@ export function Footer() {
               </div>
             </div>
             <p className="footer__tagline">
-              Excelencia e sofisticacao em cada detalhe do seu nail design.
+              Excelência e sofisticação em cada detalhe do seu nail design.
             </p>
           </div>
 
           <div>
-            <h4 className="footer__heading">Navegacao</h4>
+            <h4 className="footer__heading">Navegação</h4>
             <ul className="footer__links">
               {navLinks.map((link) => (
                 <li key={link.href}>
