@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://byamarcondes.myvisual.com.br/sitemap.xml
